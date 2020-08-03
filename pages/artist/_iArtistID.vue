@@ -6,20 +6,20 @@
 
 <script>
 export default {
-  head() {
-    return {
-      title: 'Artist'
-    }
+  async asyncData({ store, $axios, params }) {
+    await store.dispatch('artist/GET_ITEM_WITH_PICTURE', {
+      iArtistID: params.iArtistID
+    })
   },
   computed: {
     artist({ $store }) {
       return $store.state.artist.item
     }
   },
-  async asyncData({ store, $axios, params }) {
-    await store.dispatch('artist/GET_ITEM', { 
-      iArtistID: params.iArtistID
-    })
+  head() {
+    return {
+      title: 'Artist'
+    }
   }
 }
 </script>

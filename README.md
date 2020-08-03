@@ -20,3 +20,16 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+npm run lint -- --fix
+npm run lint
+
+sudo npm install -g sequelize-cli
+sequelize db:create
+sequelize db:migrate
+sequelize db:seed:all
+sudo npm install -g nodemon
+npm run dev
+history
+sequelize db:undo
+sequelize db:undo:all

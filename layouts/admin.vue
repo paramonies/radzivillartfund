@@ -1,0 +1,50 @@
+<template>
+  <div>
+    <b-navbar toggleable="sm" type="dark" variant="dark">
+      <b-container>
+        <b-navbar-brand>RadzivillArtFund</b-navbar-brand>
+        <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+        <b-collapse id="nav-collapse" is-nav>
+          <b-navbar-nav>
+            <b-nav-item to="/admin/new" active-class="active">
+              Новости
+            </b-nav-item>
+            <b-nav-item to="/admin/object" active-class="active">
+              Объекты
+            </b-nav-item>
+            <b-nav-item to="/admin/users" active-class="active">
+              Пользователи
+            </b-nav-item>
+            <b-nav-item-dropdown text="Справочники">
+              <b-dropdown-item
+                to="/admin/libraries/object_type"
+                active-class="active"
+              >
+                Виды объектов
+              </b-dropdown-item>
+              <b-dropdown-item
+                to="/admin/libraries/object_options"
+                active-class="active"
+              >
+                Опции отеля
+              </b-dropdown-item>
+              <b-dropdown-item
+                to="/admin/libraries/room_options"
+                active-class="active"
+              >
+                Опции комнат
+              </b-dropdown-item>
+              <b-dropdown-item
+                to="/admin/libraries/room_type"
+                active-class="active"
+              >
+                Категории номеров
+              </b-dropdown-item>
+            </b-nav-item-dropdown>
+          </b-navbar-nav>
+        </b-collapse>
+      </b-container>
+    </b-navbar>
+    <nuxt />
+  </div>
+</template>

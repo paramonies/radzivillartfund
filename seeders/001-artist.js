@@ -34,10 +34,10 @@ module.exports = {
           sArtistFirstName: 'Владимир',
           sArtistPhone: '9034444444',
           sArtistEmail: 'tr@ya.ru',
-          dArtistBirthday: null,
+          dArtistBirthday: new Date('1984-06-18'),
           sArtistAvatar: null,
           iActive: true
-        },
+        }
       ],
       {}
     )
